@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "airbnbc",
+    "slug": "airbnbc",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.utez.airbnbc",
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyCJHAgqtIHuo7iKU57tIQGt_OJ_t7cv-5M"
+      }
+    },
+    "android": {
+      "package": "com.utez.airbnbc",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCxxju33Rjc45ul17BlUS7hmYmzx3V23ts"
+        }
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6cd295be-5195-472e-af2c-0427c949baff"
+      }
+    }
+  }
+}
